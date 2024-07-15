@@ -57,6 +57,9 @@ input[type="number"] {
   box-sizing: border-box;
 }
 
+label {
+    margin-top: 15px; /* Added margin for spacing */
+
 button {
   padding: 15px;
   background-color: #007bff;
