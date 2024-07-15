@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DCF Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+    <h1>Discounted Cash Flow Calculator</h1>
+    <form id="dcfForm">
+      <h3>Free Cash Flow (FCF) for the Next 10 Years</h3>
+      <table>
+        <tr>
+          <th>Year</th>
+          <th>FCF</th>
+        </tr>
+        <tbody id="fcfInputs">
+          <!-- JavaScript will populate this table -->
+        </tbody>
+      </table>
+      <label for="discountRate">Desired Level of Return (%)</label>
+      <input type="number" id="discountRate" step="0.01" required /><br />
+
+      <label for="growthRate">Perpetual Growth Rate (%)</label>
+      <input type="number" id="growthRate" step="0.01" required /><br />
+
+      <label for="marginOfSafety">Margin of Safety (%)</label>
+      <input type="number" id="marginOfSafety" step="0.01" required /><br />
+
+      <label for="marketValue">Current Market Value ($)</label>
+      <input type="number" id="marketValue" step="0.01" required /><br /><br />
+
+      <button type="button" onclick="calculateDCF()">Calculate</button>
+    </form>
+    <h3 id="result"></h3>
+
+    <script src="PortfolioAppplication.js"></script>
+  </body>
+</html>
